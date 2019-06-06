@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+	
+	<dubbo:application name="example-dubbo-consumer"
+		owner="" organization="dubbox" />
+	<dubbo:registry protocol="zookeeper" 
+		address="120.26.106.157:2181" 
+		timeout="100000"/>
+    
+    <!-- 短信平台  -->
+	<dubbo:reference interface="com.rapid.example.dubbo.provider.api.DemoApi"
+		id="demoApi" retries="0" check="false" timeout="10000" cluster="failfast"/>
+		
+</beans>

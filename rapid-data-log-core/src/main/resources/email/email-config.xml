@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="gb2312"?>
+<email>
+      <!-- 设置缺省的FROM地址-->
+	<from>no_reply@mizlicai.com</from>
+	
+    <!-- 设置缺省的FROM地址别名-->
+	<alias>yuany</alias>
+	
+    <!-- 设置SMTP服务器名称 -->
+	<host-name>smtp.exmail.qq.com</host-name>
+	
+	<!-- 设置SMTP端口 -->
+	<smtp-port>25</smtp-port>
+	
+	<!-- 设置是否使用SSL -->
+	<ssl>true</ssl>
+	
+	<!-- 设置SSL端口 -->
+	<ssl-port>465</ssl-port>
+	
+	<!-- 认证用户 -->
+	<auth decrypt="true">
+		<!-- 认证用户名 -->
+		<user-name>no_reply@mizlicai.com</user-name>
+		<!-- 认证用户密码 -->
+		<password>29CB86F77F0C126B154045877E88E436039CF5A786969633CA279253D6398994</password>
+	</auth>
+
+</email>

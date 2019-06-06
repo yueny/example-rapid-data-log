@@ -1,0 +1,5 @@
+# 服务器配置
+server:
+   port: 8112
+   sessionTimeout: 45
+   contextPath: /
