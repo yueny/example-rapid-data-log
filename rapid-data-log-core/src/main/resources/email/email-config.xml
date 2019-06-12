@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="gb2312"?>
 <email>
-      <!-- 设置缺省的FROM地址-->
-	<from>no_reply@mizlicai.com</from>
-	
-    <!-- 设置缺省的FROM地址别名-->
-	<alias>yuany</alias>
-	
-    <!-- 设置SMTP服务器名称 -->
-	<host-name>smtp.exmail.qq.com</host-name>
-	
-	<!-- 设置SMTP端口 -->
-	<smtp-port>25</smtp-port>
-	
+	<!-- 设置缺省的FROM地址-->
+	<from>deep_blue_yang@126.com</from>
+	<!-- 设置缺省的FROM地址别名-->
+	<alias>deep_blue_yang@126</alias>s
+	<!-- 设置SMTP服务器名称 -->
+	<host-name>smtp.126.com</host-name>
+	<!-- 设置非SSL协议SMTP端口 -->
+	<smtp-port>465</smtp-port>
 	<!-- 设置是否使用SSL -->
 	<ssl>true</ssl>
-	
-	<!-- 设置SSL端口 -->
+	<!-- 设置SSL协议SMTP端口 -->
 	<ssl-port>465</ssl-port>
-	
+
 	<!-- 认证用户 -->
-	<auth decrypt="true">
+	<auth decrypt="true" pw-ps="e3194b6b10a8e5a0">
 		<!-- 认证用户名 -->
-		<user-name>no_reply@mizlicai.com</user-name>
-		<!-- 认证用户密码 -->
-		<password>29CB86F77F0C126B154045877E88E436039CF5A786969633CA279253D6398994</password>
+		<user-name>deep_blue_yang@126.com</user-name>
+		<!-- 认证用户密码 new  -->
+		<password>a668cbc1e9f66ff061f6fde864dfa7fc6d2dcad1a19d372733bf6e631a39c6c368368957381ca0fe</password>
 	</auth>
+
+	<!-- 配置项 -->
+	<config print-duration-timer="true">
+		<debug>true</debug>
+	</config>
 
 </email>
